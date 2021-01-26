@@ -1,0 +1,80 @@
+{% set activepage="home" %}
+{% extends "pagelayout.njk" %}
+
+{% block intro %}
+	<!-- Fade -->
+	<div id="wrapper" class="fade-in">
+
+	<!-- Intro -->
+		<div id="intro">
+			<h1>The Breakaways<br />
+			4wd Club of SA</h1>
+			<p>Member of <a href="https://www.4wdsa.asn.au/">Four Wheel Drive SA</a> since 1996</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+	
+{% endblock %}
+
+
+{% block content %}
+
+	<!-- Featured Post -->
+		<article class="post">
+			<header>
+				<h2>Welcome to the site of The Breakaways 4WD Club of SA.</h2>
+				<p>The Breakaways are a not-for-profit organization formed for like-minded Four Wheel Drivers in the north-east area of Adelaide.</p>
+			</header>
+			<p>The Club conducts group 4WD activities and enables members to be educated and trained in correct, responsible, and environmentally friendly, vehicle operating techniques.
+				<br /><br />We encourage visitors and prospective members to participate in our Club trips and activities and gain invaluable experiences. Take a browse and see the various trips that have occurred previously and those that are coming up.
+				<br /><br />If you require further information on any aspect of the Club do not hesitate to contact any of the committee members who would be pleased to help you.</p>
+			<span class="image fit"><img src="images/2019argadells.jpeg" alt="" /></span>
+		</article>
+
+	<!-- Posts -->
+		<section class="posts">
+			<article>
+				<header>
+					<h3>Next Meeting</h3>
+				</header>
+				<p><b id="meetingdate">7.30pm - 24th June, 2020</b>
+				<br />Modbury West Community Hall
+				<br />Capulet Crescent, Modbury </p>
+			</article>
+			<article>
+				<header>
+					<h3>Next Trip</h3>
+				</header>
+				<p id="nexttrip">See Future Trips Page</p>
+			</article>
+			<article>
+				<header>
+					<span class="date">18th - 19th July, 2020</span>
+					<h2><a href="#">Geranium</a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="images/2020Geranium.jpg" alt="" /></a>
+				<ul class="actions special">
+					<li><a href="#" class="button">Trip Report</a></li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<span class="date">20th - 21st June, 2020</span>
+					<h2><a href="#">Loveday</a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="images/2020Loveday.jpg" alt="" /></a>
+				<ul class="actions special">
+					<li><a href="#" class="button">Trip Report</a></li>
+				</ul>
+			</article>
+		</section>
+
+{% endblock %}
+
+
+{% block introend %}
+	<!-- Fade End -->
+	</div>
+
+{% endblock %}

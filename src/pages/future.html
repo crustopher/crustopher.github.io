@@ -1,0 +1,33 @@
+{% set activepage="future" %}
+{% extends "pagelayout.njk" %}
+
+{% block content %}
+
+	<!-- Post -->
+							<section class="post">
+								<p>Participants must book in with Trip Leader prior to attending trip, but if you are unable to attend, please notify Trip Leader.<br />
+								Dates, destinations and trip leaders are subject to change due to unforeseen circumstances</p>
+
+								<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Dates</th>
+													<th>Destination</th>
+													<th>Trip Leader</th>
+												</tr>
+											</thead>
+											<tbody>
+												{% for trip in trips %}
+                                                    <tr>
+													    <td>{{trip.dateString}}<br />{{trip.dateSub}}</td>
+													    <td>{{trip.trip}}</td>
+													    <td>{{trip.leader}}</td>
+												    </tr>
+                                                {% endfor %}
+											</tbody>
+										</table>
+									</div>
+							</section>
+
+{% endblock %}

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Breakaways 4WD Club</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+    {% block intro %}
+      <div id="wrapper">
+    {% endblock %}
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">The Breakaways</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							{% if activepage=="home" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="index.html">Home</a></li>
+
+							{% if activepage=="details" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="details.html">Club Details</a></li>
+							
+							{% if activepage=="membership" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="membership.html">Membership</a></li>
+							
+							{% if activepage=="past" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="past.html">Past Trips</a></li>
+							
+							{% if activepage=="future" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="future.html">Future Trips</a></li>
+							
+							{% if activepage=="links" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="links.html">Links</a></li>
+							
+							{% if activepage=="membersonly" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="membersonly2.html" target="_blank">Members Only</a></li>
+							
+							{% if activepage=="contact" %}
+							<li class="active">
+							{% else %}
+							<li>
+							{% endif %}
+							<a href="contact.html">Contact Us</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/Breakaways-4WD-Club-246111255414243" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+          {% block content %}
+            <h1>DEFAULT</h1>
+          {% endblock %}
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<section class="alt">
+								<h3>Mail</h3>
+								<p>PO Box 56<br />
+								Modbury North<br />
+								SA 5092</p>
+							</section>
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:breakaways4wdclub@hotmail.com">breakaways4wdclub@hotmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/Breakaways-4WD-Club-246111255414243" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Breakaways 4WD Club 2020</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Background: <a href="https://commons.wikimedia.org/wiki/File:Sunset_at_Breakaways.jpg">Silverinverted</a></li></ul>
+					</div>
+
+    {% block introend %}
+        </div>
+    {% endblock %}
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Home Page Scripts-->
+			<script src="assets/js/meetingdate.js"></script>
+			<script src="assets/js/nexttrip.js"></script>
+
+	</body>
+</html>
